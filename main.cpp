@@ -1,21 +1,23 @@
 #include <iostream>
 
+using namespace std;
+
 namespace Circle {
-	std::string message() {
+	string message() {
 		return "This is Circle";
 	}
 }
 
 namespace Rectangle {
-	std::string message() {
+	string message() {
 		return "This is Rectangle";
 	}
 }
 
 int main() {
 
-	std::cout << Circle::message() << std::endl;
-	std::cout << Rectangle::message() << std::endl;
+	cout << Circle::message() << endl;
+	cout << Rectangle::message() << endl;
 
 	return 0;
 }
