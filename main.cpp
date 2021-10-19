@@ -5,50 +5,50 @@ using namespace std;
 
 // Uni-directional Association
 // (department -> manager)
-class Manager
-{
-private:
-	string name;
+// class Manager
+// {
+// private:
+// 	string name;
 
-public:
-	Manager(string dname){
-		name = dname;
-	}
-	void printManager(){
-		cout << "Manager's name is : " << name << endl;
-	}
-};
+// public:
+// 	Manager(string dname){
+// 		name = dname;
+// 	}
+// 	void printManager(){
+// 		cout << "Manager's name is : " << name << endl;
+// 	}
+// };
 
-class Department
-{ 
-private:
-	string deptName;
-	// has a Manager
-	Manager *mgr;
+// class Department
+// { 
+// private:
+// 	string deptName;
+// 	// has a Manager
+// 	Manager *mgr;
 
-public:
-	Department(string dname, Manager *m){
-		deptName = dname;
-		mgr = m;
-	}
+// public:
+// 	Department(string dname, Manager *m){
+// 		deptName = dname;
+// 		mgr = m;
+// 	}
 
-	void printDepartment(){
-		cout << "Department name is : " << deptName << endl;
-		mgr->printManager();
-	}
+// 	void printDepartment(){
+// 		cout << "Department name is : " << deptName << endl;
+// 		mgr->printManager();
+// 	}
 
-};
+// };
 
-int main() {
+// int main() {
   
-	Manager *m = new Manager("Thushara");
+// 	Manager *m = new Manager("Thushara");
 
-	Department *d = new Department("SE", m);
+// 	Department *d = new Department("SE", m);
 
-	d->printDepartment();
+// 	d->printDepartment();
 
-	return 0;
-}
+// 	return 0;
+// }
 
 
 //----------------------------------------------------------
@@ -147,83 +147,83 @@ int main() {
 //----------------------------------------------------------
 // Association Class 
 
-// class Employee
-// {
-// private:
-// 	string empID;
-// 	string name;
-// public:
-// 	Employee(string pempID, string pname)
-// 	{
-// 		empID = pempID;
-// 		name = pname;
-// 	}
+class Employee
+{
+private:
+	string empID;
+	string name;
+public:
+	Employee(string pempID, string pname)
+	{
+		empID = pempID;
+		name = pname;
+	}
 	
-// 	void displayEmployee()
-// 	{
-// 		cout << "Emp ID = " << empID << endl;
-// 		cout << "Name = " << name << endl;
-// 	}
-// };
+	void displayEmployee()
+	{
+		cout << "Emp ID = " << empID << endl;
+		cout << "Name = " << name << endl;
+	}
+};
 
-// class Project
-// {
-// private:
-// 	string projectID;
-// 	string name;
-// public:
-// 	Project(string pprojectID, string pname)
-// 	{
-// 		projectID = pprojectID;
-// 		name = pname;
-// 	}
+class Project
+{
+private:
+	string projectID;
+	string name;
+public:
+	Project(string pprojectID, string pname)
+	{
+		projectID = pprojectID;
+		name = pname;
+	}
 
-// 	void displayProject()
-// 	{
-// 		cout << "Project ID = " << projectID << endl;
-// 		cout << "Name  = " << name << endl;
-// 	}
-// };
+	void displayProject()
+	{
+		cout << "Project ID = " << projectID << endl;
+		cout << "Name  = " << name << endl;
+	}
+};
 
-// class worksON
-// {
-// private:
-// 	Employee *emp;
-// 	Project *prj;
-// 	int hours;
-// public:
-// 	worksON(Employee *pemp, Project *pprj, int phours)
-// 	{
-// 		emp = pemp;
-// 		prj = pprj;
-// 		hours = phours;
-// 	}
-// 	void displayWorksON()
-// 	{
-// 		emp->displayEmployee();
-// 		prj->displayProject();
-// 		cout << "Hours = " << hours << endl;
-// 	}
-// };
+class worksON
+{
+private:
+	Employee *emp;
+	Project *prj;
+	int hours;
+public:
+	worksON(Employee *pemp, Project *pprj, int phours)
+	{
+		emp = pemp;
+		prj = pprj;
+		hours = phours;
+	}
+	void displayWorksON()
+	{
+		emp->displayEmployee();
+		prj->displayProject();
+		cout << "Hours = " << hours << endl;
+	}
+};
 
-// int main()
-// {
-// 	Employee *e[2];
-// 	e[0] = new Employee("E001", "Thushara");
-// 	e[1] = new Employee("E002", "Ashen");
+int main()
+{
+	Employee *e[2];
+	e[0] = new Employee("E001", "Thushara");
+	e[1] = new Employee("E002", "Ashen");
 	
-// 	Project *p[2];
-// 	p[0] = new Project("P001", "Python");
-// 	p[1] = new Project("P002", "Java");
+	Project *p[2];
+	p[0] = new Project("P001", "Python");
+	p[1] = new Project("P002", "Java");
 	
-// 	worksON work1(e[0], p[0], 2);
-// 	worksON work2(e[1], p[1], 4);
+	worksON work1(e[0], p[0], 2);
+	worksON work2(e[1], p[1], 4);
 	
-// 	work1.displayWorksON();
-// 	cout << endl;
-//   	work2.displayWorksON();
+	work1.displayWorksON();
+	cout << endl;
+  	work2.displayWorksON();
 	
-// 	delete e[0];
+	delete e[0];
   
-// 	return 0;
-// }
+	return 0;
+}
