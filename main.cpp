@@ -10,6 +10,12 @@ class Parent{
 		string name;
 
 	public:
+		Parent() {
+			cout << "Parent C" << endl;
+		}
+		~Parent() {
+			cout << "Parent D" << endl;
+		}
 		void setName(string pname);
 		void displayParent();
 };
@@ -30,6 +36,12 @@ class Child : public Parent{
 		int age;
 
 	public:
+		Child() {
+			cout << "Child C" << endl;
+		}
+		~Child() {
+			cout << "Child D" << endl;
+		}
 		void setAge(int pAge);
 		void displayChild();
 };
@@ -51,8 +63,8 @@ int main() {
 	ch.setName("Thushara");
 	ch.setAge(23);
 
-	ch.displayChild();
-	ch.displayParent();
+	// ch.displayChild();
+	// ch.displayParent();
 
 	return 0;
 }
