@@ -34,7 +34,7 @@ private:
   	Room *room[2];
 
 public:
-	House() {
+	House() {//Constructore
 		room[0] = new Room(101);
 		room[1] = new Room(102);
 	}
@@ -50,7 +50,7 @@ public:
 		}
 	}
 
-	~House() {
+	~House() {//Ditructore
 		cout << "House is destroyed!" << endl;
 		for (int i=0; i < 2; i++) {
 			delete room[i];
