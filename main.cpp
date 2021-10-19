@@ -2,34 +2,21 @@
 
 using namespace std;
 
-class Student {
-	private:
-		string name;
-	public:
-		void setName(string n);
-		void printName();
-};
-
-void Student::setName(string n) {
-	name = n;
-}
-
-void Student::printName() {
-	cout << "Name : " << name << endl;
+void foo(int num) {
+	num += 4;
 }
 
 int main() {
 	
-	// Static
-	Student s1;
-	s1.setName("Thushara");
-	s1.printName();
+	// int x = 5;		// 0x7ffd1da6e24c
+	// int *y;
+	// y = &x;
+	// cout << *y << endl;
 
-	// Dynamic
-	Student *s2 = new Student();
-	s2->setName("Thiwanka");
-	s2->printName();
-	delete s2;
+	int num = 5;
+	foo(num);
+
+	cout << num << endl;
 
 	return 0;
 }
