@@ -4,24 +4,24 @@
 using namespace std;
 
 // Part
-class Room{
+class Room {
 
 private:
-  	int roomno;
+  	int roomNo;
 
 public:
-	Room(){}
+	Room() {}
 
 	Room(int no) {
-		roomno = no;
+		roomNo = no;
 	}
 
 	void Display() {
-		cout<< "Room : " << roomno << endl;
+		cout << "Room : " << roomNo << endl;
 	}
 
 	~Room() {
-		cout<< "Destroying Room : " << roomno << endl;
+		cout << "Destroying Room : " << roomNo << endl;
 	}
 
 };
@@ -51,7 +51,7 @@ public:
 	}
 
 	~House() {
-		cout<< "House is destroyed!" << endl;
+		cout << "House is destroyed!" << endl;
 		for (int i=0; i < 2; i++) {
 			delete room[i];
 		}
