@@ -14,11 +14,13 @@ int main() {
 	int x = 10;
 	int y = 5;
 
+	// Before
 	cout << "X: " << x << endl;
 	cout << "Y: " << y << endl;
 
 	func(&x, &y);
 
+	// After
 	cout << "X: " << x << endl;
 	cout << "Y: " << y << endl;
 
