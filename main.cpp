@@ -21,7 +21,7 @@ class Order{
     int date;
     string status;
     double price;
-    OrderDetails *orderdetails // define "Part" object here
+    OrderDetails *orderdetails; // define "Part" object here
 
   public :
     void addOrderDetails(OrderDetails *od){
@@ -32,4 +32,10 @@ class Order{
   float calcTax();
   double calcTotal();
 };
+
+int main() {
+
+  
+  
+}
 
