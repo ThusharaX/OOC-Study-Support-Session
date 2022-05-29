@@ -1,10 +1,39 @@
-#include <iostream>
+#include<iostream>
+#include<cstring>
+#define SIZE 20
 
 using namespace std;
+// (i)
+class Item{
 
-int main() {
-	
-	cout << "2018-01-(d)\n";
+private : 
+  int itemID;
+  char name[SIZE];
+  double price;
 
-	return 0;
+public :
+  Item();
+  Item(int pid, char pname[]);
+  void setPrice(double pprice);
+  double getPrice();
+  void display();
+};
+
+//(ii)
+
+Item ::Item(int pid, char pname[]){
+  itemID = pid;
+  strcpy(name, pname);
 }
+
+//(iii)
+void Item :: setPrice(double pprice){
+
+  price = pprice;
+}
+
+double Item :: getPrice() {
+
+  return price;
+}
+
