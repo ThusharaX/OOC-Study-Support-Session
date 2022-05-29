@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	
-	cout << "Hello World!\n";
+	cout << "2018-01-(d)\n";
 
 	return 0;
 }
