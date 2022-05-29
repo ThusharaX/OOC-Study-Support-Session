@@ -15,7 +15,7 @@ class Animal {
 
 int main() {
 	
-	cout << "Hello World!\n";
+	cout << "Function Overriding\n\n";
 
 	return 0;
 }
