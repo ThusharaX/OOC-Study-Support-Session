@@ -27,15 +27,15 @@ void Student::printName() {
 int main() {
 	
 	// Static
-	// Student s1;
-	// s1.setName("Thushara");
-	// s1.printName();
+	Student s1;
+	s1.setName("Thushara");
+	s1.printName();
 
 	// Dynamic
 	Student *s2 = new Student();
 	s2->setName("Thiwanka");
-	// s2->printName();
-	s2->print();
+	s2->printName();
+	// s2->print();
 	delete s2;
 
 	return 0;
