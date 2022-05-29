@@ -34,10 +34,10 @@ void Student::printDetails() {
 int main() {
 	
 	// Object creation
-	// Student s;
+	Student s;
 	Student s2("Ashen", 25);
 
-	// s.printDetails();
+	s.printDetails();
 	s2.printDetails();
 
 	return 0;
