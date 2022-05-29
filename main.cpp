@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int func(int *pX, int *pY) {
+void func(int *pX, int *pY) {
 	*pX = *pX + 4;
 	*pY = *pY + 4;
 }
