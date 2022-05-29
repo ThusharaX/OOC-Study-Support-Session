@@ -1,10 +1,35 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
 
-int main() {
-	
-	cout << "2018-01-(f)\n";
+// Order details class (Part)
 
-	return 0;
-}
+class OrderDetails{
+
+  private :
+    int qty;
+    string taxStatus;
+
+  public :
+  void calcSubTotal();
+  float clacTax();  
+};
+
+// Oder class (Whole)
+
+class Order{
+  private :
+    int date;
+    string status;
+    double price;
+    OrderDetails *orderdetails // define "Part" object here
+
+  public :
+    void addOrderDetails(OrderDetails *od){
+      orderdetails = od;
+    }
+
+  void calcSubTotal();
+  float calcTax();
+  double calcTotal();
+};
+
