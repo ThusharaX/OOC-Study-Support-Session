@@ -22,5 +22,12 @@ Good luck with your exams! ❣️
               <sub><b>Ashen Wijesingha</b></sub>
           </a>
       </td>
+	  <td align="center">
+          <a href="https://github.com/SahanPunchihewa">
+              <img src="https://avatars.githubusercontent.com/u/72688889?v=4" width="100(px);" alt="SahanPunchihewa"/>
+              <br />
+              <sub><b>Sahan Punchihewa</b></sub>
+          </a>
+      </td>
   </tr>
 </table>
