@@ -5,10 +5,10 @@ using namespace std;
 class Student {
 	private:
 		string name;
+	public:
 		string getName() {
 			return name;
 		}
-	public:
 		void setName(string n);
 		void printName();
 		void print() {
