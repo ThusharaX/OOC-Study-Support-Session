@@ -4,7 +4,32 @@ IT 1050 Object Oriented Concepts
 
 Good luck with your exams! ❣️
 
-[Pointers](/tree/Pointers)
+## Topics
+- [Dependency](../../tree/Dependency)
+- [Static & Dynamic Objects](../../tree/StaticDynamic)
+- [Constructors & Destructors](../../tree/ConstructorDestructor)
+- [Polymorphism](../../tree/polymorphism)
+- [Setters & Getters](../../tree/Setters-Getters)
+- [Formatting Output](../../tree/FormattingOutput)
+- [Pointers](../../tree/Pointers)
+- [Function Overriding](../../tree/Overriding)
+- [Function Overloading](../../tree/Overloading)
+- ["this" Keyword](../../tree/This-Keyword)
+- [Pass by Reference](../../tree/Pass-By-Reference)
+- [Pass by Value](../../tree/Pass-By-Value)
+- [Header-Files](../../tree/Header-Files)
+- [Inheritance](../../tree/Inheritance)
+
+## Past Paper Answers
+- [2018-01-(d)](../../tree/2018-01-(d))
+- [2018-01-(e)](../../tree/2018-01-(e))
+- [2018-01-(f)](../../tree/2018-01-(f))
+- [2018-04](../../tree/2018-04)
+- [2019-June-02-(b)](../../tree/2019-June-02-(b))
+- [2019-June-02-(c)](../../tree/2019-June-02-(c))
+
+## Past Papers
+[OOC Past Papers]([../../tree/Dependency](https://github.com/ThusharaX/Cpp-programming/tree/main/Past%20Papers))
 
 ## Contributors ✨
 
