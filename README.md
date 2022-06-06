@@ -29,7 +29,7 @@ Good luck with your exams! ❣️
 - [2019-June-02-(c)](../../tree/2019-June-02-(c))
 
 ## Past Papers
-[OOC Past Papers]([../../tree/Dependency](https://github.com/ThusharaX/Cpp-programming/tree/main/Past%20Papers))
+[OOC Past Papers](https://github.com/ThusharaX/Cpp-programming/tree/main/Past%20Papers)
 
 ## Contributors ✨
 
